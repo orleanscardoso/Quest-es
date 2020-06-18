@@ -1,8 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
 
-	// criei uma função que fosse capaz de retornar ao usuário se fosse maior ou não que 18 anos através da condição ternária (idad>=18)? ‘Condição1’ ;’condição2’;
-function veridad(idad) {
+  <script>
+    // criei uma função que fosse capaz de retornar ao usuário se fosse maior ou não que 18 anos através da condição ternária (idad>=18)? ‘Condição1’ ;’condição2’;
+function veridad(idad)
+{
     return new Promise(function(ver, rejeitar)
- {
+{
       setTimeout(function() 
 {
         return idad >= 18 ? ver() : rejeitar();
@@ -21,4 +29,9 @@ function veridad(idad) {
       console.log("Menor que 18");
 }
 );
+  </script>
+
+</body>
+</html>
+	
 

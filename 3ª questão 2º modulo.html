@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul id="lista"></ul>
+<button onclick="gerar()"> click</button>
+ <script>
+ 	function gerar(){
+    var nome = ["Diego", "Gabriel", "Lucas"]; //criou-se o objeto chamado nome
+    var lista = document.getElementById('lista'); //criou-se o objeto chamado lista
+    for(var i = 0; i < 3; i++){
+        var item = document.createElement('li'); // chama na dom e cria um elemento no formato html li que é o marcador
+        item.appendChild(document.createTextNode(nome[i])); //para cada nome printa na tela
+        lista.appendChild(item);
+    }
+}
+
+ </script>
+
+</body>
+</html>

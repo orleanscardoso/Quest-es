@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3ª quest</title>
+</head>
+<body>
+	<script>
+// lógica com condicionais: IndexOf e if essa questão pede pra retornar true ou false se o valor em análise for igual ao valor do vetor habilidade, através da função criada “temHabilidade” com o parâmetro habilidade foi criado uma variável chamado resultado e nela indexado através do comando indexOf o nome “Javascript” e através da lógica com if e else retornar true or false se o valor que tem dentro da variável resultado for ===, ouseja, mesmo tipo e mesmo conjunto de caracteres do vetor habilidade. 
+function temHabilidade(habilidade) {
+        var resultado = habilidade.indexOf("Javascript");
+
+        if (resultado >= 0) 
+        {
+            return true;
+        } 
+        else 
+        {
+            return false;
+        }
+    }
+    var habilidade = ["Javascript", "ReactJS", "React Native"];
+    temHabilidade(habilidade); 
+
+    console.log(temHabilidade(habilidade));
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>quest2</title>
+</head>
+<body>
+//primeiramente fiz um botão e referenciei sua class como”botão” e id como 'btnCriar' para podê-las chamar quando achar conveniente, em seguida utilizei a função “onclick” para quando houver um clique no botão a função gerarQuadrados no meu JavaScript ser chamada. Em seguida construí a função gerarQuadrados e declarei uma variável como caixa e utilizei a operação createElement para gerar um elemento e utilizei também operações em css como width, height, margin, backgroundColor 
+
+<body>
+<div id="app">
+ <button class='botao' id='btnCriar' onClick="gerarQuadrado()">Gerar novo</button>
+</div>
+<script>
+   function gerarQuadrado() {
+    var caixa = document.createElement("div");
+    caixa.style.width = '100px';
+    caixa.style.height = '100px';
+    caixa.style.margin = '10px';
+    caixa.style.backgroundColor = '#f00';
+    document.body.appendChild(caixa);
+}
+caixa.classList.add('box'); 
+    document.body.appendChild(caixa);
+</script>
+</body>
+
+</body>
+</html>

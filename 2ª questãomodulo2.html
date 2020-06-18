@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<body>	
+    <div id="container"> 
+    <button type="button" onclick="criarQuadrado()">Criar quadrado</button>
+   </div>
+    <script>
+      function criarQuadrado() {
+        var caixa = document.createElement("div"); //cria um elemento através da função create element
+        caixa.style.width = "100px";  //chamei a classe do css no js
+        caixa.style.height = "100px";
+        caixa.style.backgroundColor = "#FF0000";
+        caixa.style.margin = "10px";
+        caixa.addEventListener('mouseover', function(){ //através da função mouseover ao passar o mouse no quadrado ele fará a função que se segue que é mudar a cor.
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return this.style.background = color;// retorna a cor mudada
+        });
+
+        var container = document.getElementById("container"); 
+        container.appendChild(caixa);
+      }
+</script>
+  </body>
+
+</body>
+</html>
